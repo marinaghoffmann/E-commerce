@@ -28,15 +28,14 @@ Landing Zone → Bronze → Silver → Gold
 
 ---
 
-## 📂 Estrutura do Repositório
-E-commerce/
-├── bronze.ipynb              # Ingestão dos CSVs e API do Banco Central
-├── silver.ipynb              # Transformações, limpeza e padronização
-├── gold.ipynb                # Data Marts analíticos e rankings
-├── job_workflow.yaml         # Exportação do Workflow do Databricks
-└── print_execucao_job.png    # Print da execução com sucesso do pipeline
-
----
+## Estrutura do Repositório
+| Arquivo | Descrição |
+|---------|-----------|
+| `bronze.ipynb` | Ingestão dos CSVs e API do Banco Central |
+| `silver.ipynb` | Transformações, limpeza e padronização |
+| `gold.ipynb` | Data Marts analíticos e rankings |
+| `job_workflow.yaml` | Exportação do Workflow do Databricks |
+| `print_execucao_job.png` | Print da execução com sucesso do pipeline |
 
 ## 🥉 Camada Bronze
 
