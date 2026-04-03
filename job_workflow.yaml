@@ -1,0 +1,28 @@
+resources:
+  jobs:
+    New_Job_Apr_02_2026_11_06_PM:
+      name: New Job Apr 02, 2026, 11:06 PM
+      schedule:
+        quartz_cron_expression: 36 0 13 * * ?
+        timezone_id: America/Recife
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/mhg@cesar.school/E-commerce/bronze
+            source: WORKSPACE
+        - task_key: Silver
+          depends_on:
+            - task_key: Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/mhg@cesar.school/E-commerce/silver
+            source: WORKSPACE
+        - task_key: Gold
+          depends_on:
+            - task_key: Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/mhg@cesar.school/E-commerce/gold
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
