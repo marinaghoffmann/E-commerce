@@ -35,7 +35,7 @@ Landing Zone → Bronze → Silver → Gold
 | `silver.ipynb` | Transformações, limpeza e padronização |
 | `gold.ipynb` | Data Marts analíticos e rankings |
 | `job_workflow.yaml` | Exportação do Workflow do Databricks |
-| `print_execucao_job.png` | Print da execução com sucesso do pipeline |
+| `print_execucao_job.webp` | Print da execução com sucesso do pipeline |
 
 ## 🥉 Camada Bronze
 
